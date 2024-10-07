@@ -62,6 +62,11 @@ public class JFrameRadioButton extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButtonVerde);
         jRadioButtonVerde.setForeground(new java.awt.Color(51, 51, 51));
         jRadioButtonVerde.setText("Verde");
+        jRadioButtonVerde.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonVerdeActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(jRadioButtonAzul);
         jRadioButtonAzul.setForeground(new java.awt.Color(51, 51, 51));
@@ -149,6 +154,10 @@ public class JFrameRadioButton extends javax.swing.JFrame {
         }
                
     }//GEN-LAST:event_btn_SeleccionarActionPerformed
+
+    private void jRadioButtonVerdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonVerdeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonVerdeActionPerformed
 
     /**
      * @param args the command line arguments

@@ -4,6 +4,8 @@
  */
 package E07_CheckBox;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 import javax.swing.JRadioButton;
 
@@ -25,6 +27,14 @@ public class JFrameCheckBox extends javax.swing.JFrame {
        int pos= 0; 
        for (String modulo : modulos) {
             jCheckBoxModulos[pos]= new JCheckBox(modulo);//0 será verde, 1 será azul
+            jCheckBoxModulos[pos].addActionListener(new ActionListener() {
+              
+                public void actionPerformed(ActionEvent e) {
+                   jCheckBoxTodos
+                }
+            });
+            
+            
             jPanel1.add(jCheckBoxModulos[pos]);
             pos++;
         }
