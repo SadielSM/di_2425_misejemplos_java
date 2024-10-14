@@ -30,9 +30,10 @@ public class JFrameCheckBox extends javax.swing.JFrame {
             jCheckBoxModulos[pos].addActionListener(new ActionListener() {
               
                 public void actionPerformed(ActionEvent e) {
-                   jCheckBoxTodos
+                   
                 }
             });
+            
             
             
             jPanel1.add(jCheckBoxModulos[pos]);

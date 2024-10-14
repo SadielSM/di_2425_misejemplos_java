@@ -139,10 +139,11 @@ public class ComboBox extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonAnyadir)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButtonIndice)
-                    .addComponent(jButtonBorrar))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButtonAnyadir)
+                        .addComponent(jButtonBorrar)))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
@@ -186,6 +187,7 @@ public class ComboBox extends javax.swing.JFrame {
 
     private void jButtonBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBorrarActionPerformed
        
+        /*
         if(jListOpciones.getSelectedIndex()==-1){
             System.out.println("No se ha seleccionado ningun elemento");
         }else if (jListOpciones.getSelectedValue().length()!=0) {
@@ -194,8 +196,18 @@ public class ComboBox extends javax.swing.JFrame {
             }
                   
         }
+        */
+        
+                if (jListOpciones.getSelectedIndices().length != 0)
+            for (int i = jListOpciones.getSelectedIndices().length - 1; i >=0; i--) {
+                dlm.removeElementAt(jListOpciones.getSelectedIndices()[i]);               
+            }
+            
+       
     }//GEN-LAST:event_jButtonBorrarActionPerformed
 
+     
+    
     /**
      * @param args the command line arguments
      */
